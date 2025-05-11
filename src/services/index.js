@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiCall = axios.create({
-  baseURL: "https://api-neuromedai.onrender.com/api",
+  baseURL: process.env.VUE_APP_API_BASE_URL,
   httpsAgent: false,
   timeout: 5000,
   headers:
